@@ -1,0 +1,13 @@
+{
+  "name": "dynamic-import-systemjs-demo",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "serve public"
+  },
+  "author": "rickiezheng",
+  "license": "ISC",
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
+}
