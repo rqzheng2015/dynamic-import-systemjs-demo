@@ -14,5 +14,5 @@ Run command below to start the dev server.
 It will run `SystemJS` to load components if the browser not supports `dynamic import`.
 
 ```shell
-pnpm dev
+pnpm start
 ```
