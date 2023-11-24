@@ -9,17 +9,19 @@
     <script>
         new window.VConsole();
     </script>
+    <!-- load SystemJS itself from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/systemjs/dist/system.js"></script>
     <script type="systemjs-importmap">
         {
           "imports": {
-            "neptune": "./neptune.js"
+            "neptune": "./neptune.js",
+            "saturn": "./saturn.js"
           }
         }
     </script>
     <!-- load a locally hosted module -->
-    <script type="systemjs-module" src="import:neptune"></script>
-    <!-- load SystemJS itself from CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/systemjs/dist/system.js"></script>
+    <script type="systemjs-module" src="import:saturn"></script>
+
 </head>
 <body>
 </body>

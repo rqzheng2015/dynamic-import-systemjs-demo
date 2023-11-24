@@ -2,12 +2,25 @@
   "name": "dynamic-import-systemjs-demo",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "scripts": {
-    "start": "serve public"
+    "build": "npm run deleteDist && rollup -c",
+    "deleteDist": "rm -rf public",
+    "watch": "rollup -c -w",
+    "serve": "serve public",
+    "dev": "run-p watch serve",
+    "start": "run-s build serve"
   },
   "author": "rickiezheng",
   "license": "ISC",
   "devDependencies": {
+    "@babel/plugin-transform-object-assign": "^7.23.3",
+    "@babel/preset-env": "^7.23.3",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "npm-run-all": "^4.1.5",
+    "rollup": "^4.5.1",
+    "rollup-plugin-copy": "^3.5.0",
     "serve": "^14.2.1"
   }
 }
