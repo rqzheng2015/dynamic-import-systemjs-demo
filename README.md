@@ -11,7 +11,7 @@ Run `pnpm install` to install the dependencies.
 - Develop the project
 
 Run command below to start the dev server. 
-It will run `SystemJS` to load components if the browser not supports `dynamic import`.
+It will run `SystemJS` to load components if the browser doesn't support `dynamic import`.
 
 ```shell
 pnpm start
